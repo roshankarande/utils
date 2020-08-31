@@ -47,7 +47,7 @@ func ExecuteCommand(d *schema.ResourceData, key string, marshalFunc func (d *sch
 
 	m := map[string]string{
 		"ResourceData" : JsonSchema,
-		"CurrentTime"  : time.Now().Format(time.RFC3339),
+		"StartTime"  : time.Now().UTC().Format(time.RFC3339),
 	}
 
 	log.Printf("[DEBUG] : __custom__ : [executing]%s - [cmd]%s - [env]%v ",key, cmd, m)
