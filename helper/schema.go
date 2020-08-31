@@ -1,7 +1,7 @@
 package helper
 
 import (
-	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 )
 
 func SchemaCommandSpec() map[string]*schema.Schema {
